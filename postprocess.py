@@ -48,21 +48,6 @@ def post_with_dilate(fas_mask,fas_image,fas_result):
 #     cv2.imwrite(os.path.join(mul_dir,filename+'-m.jpg'),mult)
 
 if __name__=="__main__":
-    data_dir = ''
-    #path to mask
-    fas_mask = ["train_mask/b", "train_mask/d", "train_mask/o",
-                "train_mask/s", "train_mask/t", "test_mask/b",
-                "test_mask/d", "test_mask/o", "test_mask/s",
-                "test_mask/t"]
-    #path to image
-    fas_image = ["train/Images/blouse", "train/Images/dress", "train/Images/outwear",
-                 "train/Images/skirt", "train/Images/trousers", "test/Iamges/blouse",
-                 "test/Iamges/dress", "test/Iamges/outwear", "test/Iamges/skirt",
-                 "test/Iamges/trousers"]
-    #path to  result
-    fas_result = ["train_result/b", "train_result/d", "train_result/o",
-                 "train_result/s", "train_result/t", "test_result/b",
-                 "test_result/d", "test_result/o", "test_result/s",
-                 "test_result/t"]
+    
 
     post_with_dilate(fas_mask, fas_image, fas_result)
